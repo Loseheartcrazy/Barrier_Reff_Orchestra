@@ -82,7 +82,25 @@
     </header>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-8 col-lg-push-2">
+            <div class="col-lg-2">
+                <div class="panel panel-primary" id="side">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            Join Us Now!
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <br>
+                        <button class="center-block btn btn-success btn-side">Become a Member</button>
+                        <br>
+                        <button class="center-block btn btn-info btn-side">Become a Player</button>
+                        <br>
+                        <button class="center-block btn btn-danger btn-side">Support Us</button>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
                 <div id="slider">
                     <ul>
                         <li><img class="center-block" src="img/slide1.jpg"></li>
@@ -107,11 +125,12 @@
                             Upcoming events
                         </h3>
                     </div>
-                    <div class="panel-body" style="font-size:150%">
-                        <h3>Dreams and Dances</h3>
+                    <div class="panel-body" style="font-size:150%;text-align: center">
+                        <h3 class="red">Dreams and Dances</h3>
                         Tuesday 8th March 7:30pm
                         <br>Townsville Civic Theatre
                         <br>Conductor: Richard McIntyre
+                        <br><a class="btn btn-danger" href="#">Click to view more</a>
                     </div>
                 </div>
             </div>
@@ -125,14 +144,20 @@
                         </h3>
                     </div>
                     <div class="panel-body" style="font-size:150%">
-                        &emsp;Fast becoming one of North Queensland’s cultural jewels the Barrier Reef Orchestra this year launches its 15th year of performing orchestral music throughout North Queensland.
-                        <br> A community orchestra consisting of the finest musicians drawn from as far afield as Cairns and Mackay, it focuses on unique orchestral juxtapositions.
+                        <p>&emsp;Fast becoming one of North Queensland’s cultural jewels the Barrier Reef Orchestra
+                            <br>this year launches its 15th year of performing orchestral music throughout North Queensland.
+                            <br>&emsp;A community orchestra consisting of the finest musicians drawn from as far afield as
+                            Cairns and Mackay, it focuses on unique orchestral juxtapositions.
+                        </p>
+
                         <div id="hide_text" hidden>
-                            <br>An outstanding performance of Beethoven’s 9th Symphony presented to a sell-out audience was recently followed by Peter Sculthorpe’s Mangroves, a collaboration with audio-visual artists, ABC radio and Umbrella Studios.
-                            <br>The programs are testament to the orchestra’s willingness to embrace mainstream classical repertoire as well as opportunities for collaboration.
-                            <br>In 2015 the orchestra has been invited to perform in three festivals, and features in the Townsville Civic Theatre season. This is a first for the orchestra - underscoring its value to the community and highlighting its continued prominence in the cultural soundscape of North Queensland.
+                            <br>&emsp;An outstanding performance of Beethoven’s 9th Symphony presented to a sell-out audience was recently followed by Peter Sculthorpe’s Mangroves, a collaboration with audio-visual artists, ABC radio and Umbrella Studios.
+                            <br>&emsp;The programs are testament to the orchestra’s willingness to embrace mainstream classical repertoire as well as opportunities for collaboration.
+                            <br>&emsp;In 2015 the orchestra has been invited to perform in three festivals, and features in the Townsville Civic Theatre season.
+                            <br>&emsp;This is a first for the orchestra - underscoring its value to the community and highlighting its continued prominence in the cultural soundscape of North Queensland.
                         </div>
-                        <button class="btn-default" id="read" onclick="readmore()">Read More</button>
+                        <br>
+                        <button class="btn btn-warning" id="read" onclick="readMore()">Read More</button>
                     </div>
                 </div>
             </div>
@@ -150,26 +175,62 @@
                                         <img class="center-block" src="img/sponsor_main.jpg">
                                     </li>
                                     <li>
-                                        <img src="img/sponsor1.jpg">
-                                        <img src="img/sponsor2.jpg">
-                                        <img  src="img/sponsor3.jpg">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <img class="center-block" src="img/sponsor1.jpg">
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <img class="center-block" src="img/sponsor2.jpg">
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <img class="center-block" src="img/sponsor3.jpg">
+                                            </div>
+                                        </div>
                                     </li>
                                     <li>
-                                        <img class="center-block" src="img/sponsor4.jpg">
-                                        <img class="center-block" src="img/sponsor5.jpg">
-                                        <img class="center-block" src="img/sponsor6.jpg">
-                                        <img class="center-block" src="img/sponsor7.jpg">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <img class="center-block" src="img/sponsor4.jpg">
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <img class="center-block" src="img/sponsor5.jpg">
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <img class="center-block" src="img/sponsor6.jpg">
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <img class="center-block" src="img/sponsor7.jpg">
+                                            </div>
+                                        </div>
                                     </li>
                                     <li>
-                                        <img class="center-block" src="img/sponsor8.jpg">
-                                        <img class="center-block" src="img/sponsor9.jpg">
-                                        <img class="center-block" src="img/sponsor10.jpg">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <img class="center-block" src="img/sponsor8.jpg">
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <img class="center-block" src="img/sponsor9.jpg">
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <img class="center-block" src="img/sponsor10.jpg">
+                                            </div>
+                                        </div>
                                     </li>
                                     <li>
-                                        <img class="center-block" src="img/sponsor11.jpg">
-                                        <img class="center-block" src="img/sponsor12.jpg">
-                                        <img class="center-block" src="img/sponsor13.jpg">
-                                        <img class="center-block" src="img/sponsor14.jpg">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <img class="center-block" src="img/sponsor11.jpg">
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <img class="center-block" src="img/sponsor12.jpg">
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <img class="center-block" src="img/sponsor13.jpg">
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <img class="center-block" src="img/sponsor14.jpg">
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -182,9 +243,16 @@
     <script src="js/jquery.sticky.js"></script>
     <script src="js/unslider-min.js" type="text/javascript"></script>
     <script>
-        function readmore() {
+        function readMore() {
             var text = $("#hide_text");
             text.toggle(1000);
+            var button = $("#read");
+
+            if (button.html() === "Read More"){
+                button.html("Hidden")
+            } else {
+                button.html("Read More")
+            }
         }
         $(function () {
             $("#slider").unslider({
@@ -199,15 +267,16 @@
             $("#footer").unslider({
                 speed: 500,
                 delay: 3000,
-                keys: true,
+                keys: false,
                 dots: false,
                 fluid: true,
+                nav: false,
                 arrows: false,
                 autoplay: true
             });
         });
         $(window).on('load', function(){
-            $("#nav").sticky({ topSpacing: 0 });
+            $("#side").sticky({ topSpacing: 50 });
         });
     </script>
 </body>
