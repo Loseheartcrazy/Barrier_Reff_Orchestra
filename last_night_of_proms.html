@@ -151,8 +151,9 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <p>&emsp;North Queensland Ensembles Inc. is the administration body of the Barrier Reef Orchestra, by becoming a member you are supporting Townsville’s Community Orchestra which was formed in 2000.</p>
-                                <p>&emsp;Membership fees: Adult: $30.  Family: $60. Full time student: $15. Under 18: $15 Concession: $15</p>
-                                <p>&emsp;Concession available to persons in receipt of Centrelink pension card. <br>&emsp;Family membership available to a group of two adults and three persons under the age of 18 all of whom reside at the same address.<br>&emsp;Direct Debit to: NQ Ensembles Inc.  BSB 034 222  Account: 17 3033 (Please include family name as payment reference)</p>
+                                <p>&emsp;Concession available to persons in receipt of Centrelink pension card.</p>
+                                <p>&emsp;Family membership available to a group of two adults and three persons under the age of 18 all of whom reside at the same address.</p>
+                                <p>&emsp;Direct Debit to: NQ Ensembles Inc.  BSB 034 222  Account: 17 3033 (Please include family name as payment reference)</p>
                             </div>
                         </div>
                         <form class="form-horizontal" role="form">
@@ -161,6 +162,15 @@
                                 <div class="col-sm-4">
                                     <input type="text" class="form-control" id="title"
                                            placeholder="please enter your title">
+                                </div>
+                                <div class="col-sm-5">
+                                    <select title="type" id="type" class="form-control type">
+                                        <option>Adult</option>
+                                        <option>Family</option>
+                                        <option>Student</option>
+                                        <option>Concession</option>
+                                        <option>Under 18</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -175,6 +185,20 @@
                                 <div class="col-sm-9">
                                     <input type="text" class="form-control" id="givenName"
                                            placeholder="please enter your given name">
+                                </div>
+                            </div>
+                            <div class="form-group" id="student" hidden>
+                                <label for="student_id" class="col-sm-3 control-label">Student id:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="student_id"
+                                           placeholder="please enter your student id">
+                                </div>
+                            </div>
+                            <div class="form-group" id="concession" hidden>
+                                <label for="concession_id" class="col-sm-3 control-label">Concession id:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="concession_id"
+                                           placeholder="please enter your concession id">
                                 </div>
                             </div>
                             <div class="form-group" id="family" hidden>
@@ -224,6 +248,48 @@
                                            placeholder="please enter the contact number">
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Payment Total:</label>
+                                <div class="col-sm-9">
+                                    <label class="control-label">AUD   <span id="money">30</span></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Payment Type:</label>
+                                <div class="col-sm-9">
+                                    <label class="checkbox-inline">
+                                        <input type="radio" name="paymentOptions"
+                                               value="option1" checked>Cheque</label>
+                                    <label class="checkbox-inline">
+                                        <input type="radio" name="paymentOptions"
+                                               value="option2">EFTPOS</label>
+                                    <label class="checkbox-inline">
+                                        <input type="radio" name="paymentOptions"
+                                               value="option1">Cash</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-9 col-sm-push-3">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox">
+                                        Renewal membership
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">Interested in:</label>
+                                <div class="col-sm-9">
+                                    <select title="job" multiple="multiple" size="5">
+                                        <option>Playing Music</option>
+                                        <option>Management/administration</option>
+                                        <option>Player Support</option>
+                                        <option>Fundraising</option>
+                                        <option>Marketing/Promotion</option>
+                                        <option>Sponsorship</option>
+                                        <option>Desktop Publishing</option>
+                                    </select>
+                                </div>
+                            </div>
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -241,7 +307,28 @@
                         <h4 class="modal-title">Become a player</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Forms</p>
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="benefactor" class="col-sm-3 control-label">Instrument/s played:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control"
+                                           placeholder="please enter the name of Instrument/s">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="benefactor" class="col-sm-3 control-label">Qualifications:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control"
+                                           placeholder="please enter the name of qualifications">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="benefactor" class="col-sm-3 control-label">Experience:</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" title="experience" style="resize: none" rows="10" cols="50"></textarea>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-info pull-left" id="submit_player">Submit</button>
@@ -323,6 +410,7 @@
             </div>
         </div>
     </div>
+
     <footer>
         <div class="container-fluid">
             <div class="row">
@@ -427,7 +515,35 @@
         $(window).on('load', function(){
             $("#side").sticky({ topSpacing: 50 });
         });
-
+        $("#type").change(function(){
+            var type = $(".type option:selected").val();
+            if (type === "Student"){
+                $("#student").show();
+                $("#concession").hide();
+                $("#family").hide();
+                $("#money").html("15");
+            }else if (type === "Family"){
+                $("#student").hide();
+                $("#concession").hide();
+                $("#family").show();
+                $("#money").html("60");
+            }else  if (type === "Concession") {
+                $("#student").hide();
+                $("#concession").show();
+                $("#family").hide();
+                $("#money").html("15");
+            }else if (type === "Under 18"){
+                $("#student").hide();
+                $("#concession").hide();
+                $("#family").hide();
+                $("#money").html("15");
+            }else{
+                $("#student").hide();
+                $("#concession").hide();
+                $("#family").hide();
+                $("#money").html("30");
+            }
+        });
     </script>
 </body>
 </html>
