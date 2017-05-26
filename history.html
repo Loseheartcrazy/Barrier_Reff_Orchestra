@@ -99,6 +99,7 @@
                         <br>
                         <a class="center-block btn btn-danger btn-side" data-toggle="modal" data-target="#support">Support Us</a>
                         <br>
+                        <a class="center-block btn btn-primary btn-side" data-toggle="modal" data-target="#message">Leave a Message</a>
                     </div>
                 </div>
             </div>
@@ -745,6 +746,51 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger pull-left" id="submit_support">Submit</button>
+                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="message" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Leave a message</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="benefactor" class="col-sm-3 control-label">Name:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control"
+                                           placeholder="please enter your name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-sm-3 control-label">Email:</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control"
+                                           placeholder="please enter the email address">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="benefactor" class="col-sm-3 control-label">Subject:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control"
+                                           placeholder="please enter the name of qualifications">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="benefactor" class="col-sm-3 control-label">Experience:</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" title="experience" style="resize: none" rows="10" cols="50"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info pull-left" id="submit_message">Submit</button>
                         <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
                     </div>
                 </div>
